@@ -1,0 +1,5 @@
+[object Object][object Object][object Object][object Object]{"free":"2048 MB","total":"6075 MB","percent":"33%"}
+{"free":"2037 MB","total":"6075 MB","percent":"33%"}
+{"free":"2043 MB","total":"6075 MB","percent":"33%"}
+{"free":"2035 MB","total":"6075 MB","percent":"33%"}
+{"free":"2018 MB","total":"6075 MB","percent":"33%"}

@@ -1,4 +1,6 @@
 const os = require('os')
+const path = require('path')
+const log = require(path.join(__dirname, 'logger'))
 
 setInterval(() => {
     const { freemem, totalmem } = os
@@ -16,4 +18,7 @@ setInterval(() => {
     console.clear()
     console.log("= Pc Stats ============")
     console.table(stats)
+
+    log(`${JSON.stringify(stats)}\n`)
+
 }, 5000)
