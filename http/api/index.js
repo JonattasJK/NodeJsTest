@@ -16,7 +16,8 @@ http.createServer((req,res) => {
         return res.end(JSON.stringify(data))
     
     if (del){
-        data.urls = data.urls.filter(item => String(item.url) !== String(url))
+        data.urls = data.urls.filter(item => (String(item.url) !== String(url) && `${item.url}/` !== String(url)))
+        //data.urls = data.urls.filter(item => ( `${item.url}` !==  `${url}` && `${item.url}/` !== `${url}`) )
         return writeFile((message) => res.end(message)) 
     }
     
